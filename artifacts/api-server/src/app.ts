@@ -32,8 +32,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", router);
 
-connectDB().catch((err) => {
-  logger.error({ err }, "Failed to connect to MongoDB");
-});
+connectDB();
 
 export default app;
