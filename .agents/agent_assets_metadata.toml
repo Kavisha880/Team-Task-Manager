@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "nRB8xwcKozjppd0rmpFAH"
+uri = "file://team-task-manager.tar.gz"
+type = "unspecified"
+title = "Team Task Manager — Full Project"
