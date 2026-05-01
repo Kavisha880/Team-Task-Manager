@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { useAuth } from "../context/AuthContext";
 
 export default function Login() {
@@ -62,6 +63,12 @@ export default function Login() {
             {loading ? "Signing in..." : "Sign in"}
           </button>
         </form>
+        <p className="mt-5 text-center text-sm text-gray-500">
+          Don't have an account?{" "}
+          <Link href="/register" className="text-blue-600 hover:underline font-medium">
+            Register
+          </Link>
+        </p>
       </div>
     </div>
   );

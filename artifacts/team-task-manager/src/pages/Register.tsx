@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { useAuth } from "../context/AuthContext";
 
 export default function Register() {
@@ -97,6 +98,12 @@ export default function Register() {
             {loading ? "Creating account..." : "Create account"}
           </button>
         </form>
+        <p className="mt-5 text-center text-sm text-gray-500">
+          Already have an account?{" "}
+          <Link href="/login" className="text-blue-600 hover:underline font-medium">
+            Sign in
+          </Link>
+        </p>
       </div>
     </div>
   );
